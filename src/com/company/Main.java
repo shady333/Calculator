@@ -9,14 +9,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter some for start");
         while (!scanner.next().equals("exit")) {
-            System.out.print("Enter operotion: add, sub, mult, div ");
+            System.out.print("Enter operation: add, sub, mult, div ");
             String operation = scanner.next();
 
             System.out.print("Enter first number: ");
 
             int first_numb = scanner.nextInt();
             while (first_numb > 20 || first_numb < -20) {
-                System.out.print("The number must be in the range -20 to 20. Reenter plese number: ");
+                System.out.print("The number must be in the range -20 to 20. Enter please number: ");
                 first_numb = scanner.nextInt();
             }
 
@@ -24,7 +24,7 @@ public class Main {
 
             int second_numb = scanner.nextInt();
             while (second_numb > 20 || second_numb < -20) {
-                System.out.print("The number must be in the range -20 to 20. Reenter plese number: ");
+                System.out.print("The number must be in the range -20 to 20. Enter please number: ");
                 second_numb = scanner.nextInt();
             }
             int res = 0;
@@ -46,7 +46,7 @@ public class Main {
             }
 
 
-                System.out.println(String.format("Result of operation is %d,  For exit enter 'exit', or somesing for continue", res));
+                System.out.println(String.format("Result of operation is %d,  For exit enter 'exit', or something for continue", res));
         }
     }
 }
